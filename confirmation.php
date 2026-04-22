@@ -99,7 +99,7 @@ $nights = (new DateTime($booking['check_in']))->diff(new DateTime($booking['chec
 
     <!--Action Buttons-->
     <div style="display:flex; gap:16px; margin-top:24px; flex-wrap:wrap;">
-        <a href="my_bookings.php" class="btn" style="flex:1; text-align:center;">My Bookings</a>
+        <a href="my_booking.php" class="btn" style="flex:1; text-align:center;">My Bookings</a>
         <a href="room.php" class="btn btn-outline" style="flex:1; text-align:center;">Book Another Room</a>
     </div>
 </main>
