@@ -149,3 +149,175 @@ footer {
     color: #888;
     margin-top: 60px;
 }
+
+/* ============================================
+   RESPONSIVE — Tablet & Mobile
+   ============================================ */
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 14px 24px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .rooms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features {
+        padding: 40px 24px;
+    }
+    .section {
+        padding: 0 24px;
+    }
+}
+
+/* ── Mobile (max 768px) ── */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+        gap: 12px;
+        position: relative;
+    }
+    .navbar .logo {
+        font-size: 20px;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        width: 100%;
+    }
+    .navbar ul a {
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 70px 20px;
+    }
+    .hero h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .hero p {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* Features */
+    .features {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 16px;
+    }
+    .feature-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Section */
+    .section {
+        margin: 40px auto;
+        padding: 0 16px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .section-sub {
+        font-size: 14px;
+    }
+
+    /* Rooms Grid — single column on mobile */
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+    .room-card {
+        max-width: 100%;
+    }
+
+    /* Filter bar */
+    .filter-bar {
+        padding: 16px;
+    }
+    .filter-bar form {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+    .filter-select {
+        width: 100%;
+    }
+    .filter-bar .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Booking page */
+    .booking-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 11px 24px;
+        font-size: 14px;
+    }
+
+    /* Room footer */
+    .room-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .room-footer .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 13px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+}
+
+/* ── Small Mobile (max 480px) ── */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .navbar ul {
+        gap: 8px 12px;
+    }
+    .navbar ul a {
+        font-size: 12px;
+    }
+    .room-price {
+        font-size: 17px;
+    }
+    .section-title {
+        font-size: 22px;
+    }
+    .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
