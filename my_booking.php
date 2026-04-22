@@ -13,7 +13,7 @@ if (isset($_GET['cancel']) && is_numeric($_GET['cancel'])) {
         WHERE id = ? AND user_id = ? AND status = 'pending'
     ");
     $stmt->execute([$_GET['cancel'], $_SESSION['user_id']]);
-    header("Location: my_bookings.php?msg=cancelled");
+    header("Location: my_booking.php?msg=cancelled");
     exit;
 }
 
@@ -99,7 +99,7 @@ $bookings = $stmt->fetchAll();
 
                 <?php if ($b['status'] === 'pending'): ?>
                 <div style="margin-top:16px; padding-top:16px; border-top:1px solid #f5f5f5;">
-                    <a href="my_bookings.php?cancel=<?= $b['id'] ?>"
+                    <a href="my_booking.php?cancel=<?= $b['id'] ?>"
                        onclick="return confirm('Are you sure you want to cancel this booking?')"
                        style="color:#dc2626; font-size:14px; text-decoration:none; font-weight:500;">
                         Cancel Booking
