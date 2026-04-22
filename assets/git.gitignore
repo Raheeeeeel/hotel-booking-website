@@ -1,0 +1,13 @@
+# Ignore sensitive config if you move credentials later
+config.php
+
+# Ignore uploaded images folder contents
+assets/images/*
+!assets/images/.gitkeep
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore PHP error logs
+*.log

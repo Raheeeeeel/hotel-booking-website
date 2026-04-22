@@ -1,0 +1,151 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #1a1a2e;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar .logo { color: #e0b97a; font-size: 22px; font-weight: bold; text-decoration: none; }
+.navbar ul    { list-style: none; display: flex; gap: 24px; }
+.navbar ul a  { color: #ccc; text-decoration: none; font-size: 15px; transition: color 0.2s; }
+.navbar ul a:hover { color: #e0b97a; }
+
+/* ── Hero ── */
+.hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.hero h1   { font-size: 52px; margin-bottom: 16px; line-height: 1.2; }
+.hero p    { font-size: 20px; color: #aaa; margin-bottom: 36px; }
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* ── Buttons ── */
+.btn {
+    background: #e0b97a;
+    color: #1a1a2e;
+    padding: 12px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    transition: background 0.2s;
+}
+.btn:hover         { background: #c9a060; }
+.btn-outline       { background: transparent; border: 2px solid #e0b97a; color: #e0b97a; }
+.btn-outline:hover { background: #e0b97a; color: #1a1a2e; }
+.btn-sm            { padding: 8px 18px; font-size: 13px; }
+
+/* ── Features ── */
+.features {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    background: white;
+}
+.feature-card {
+    text-align: center;
+    max-width: 280px;
+    padding: 32px 24px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+.feature-icon { font-size: 36px; color: #e0b97a; margin-bottom: 16px; }
+.feature-card h3 { margin-bottom: 10px; font-size: 18px; color: #1a1a2e; }
+.feature-card p  { color: #888; font-size: 14px; line-height: 1.6; }
+
+/* ── Section ── */
+.section       { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+.section-title { font-size: 32px; color: #1a1a2e; text-align: center; margin-bottom: 8px; }
+.section-sub   { text-align: center; color: #888; margin-bottom: 40px; font-size: 16px; }
+
+/* ── Rooms Grid ── */
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+.room-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.room-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+.room-img-placeholder {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.room-img-placeholder span {
+    color: #e0b97a;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.room-info   { padding: 20px; }
+.room-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.room-header h3 { font-size: 18px; color: #1a1a2e; }
+.room-badge {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.room-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+.room-price  { font-size: 20px; font-weight: bold; color: #1a1a2e; }
+.room-price span { font-size: 13px; font-weight: normal; color: #888; }
+
+/* ── Filter Bar ── */
+.filter-bar {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.filter-select {
+    padding: 9px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+}
+
+/* ── Alerts ── */
+.alert-success { background:#d1fae5; color:#065f46; padding:12px; border-radius:6px; margin-bottom:16px; }
+.alert-error   { background:#fee2e2; color:#991b1b; padding:12px; border-radius:6px; margin-bottom:16px; }
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #1a1a2e;
+    color: #888;
+    margin-top: 60px;
+}
